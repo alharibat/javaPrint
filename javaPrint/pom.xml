@@ -3,4 +3,29 @@
   <groupId>ju.edu.jo</groupId>
   <artifactId>javaPrint</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+					<mainClass>ju.edu.jo.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>javaPrint</finalName>
+	</build>
+	
 </project>
